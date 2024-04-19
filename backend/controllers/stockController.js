@@ -47,6 +47,11 @@ const getStocksController = async (req, res) => {
         // Array to store pending promises that are going to fetch stock details 
         const stockDetailPromises = []
 
+        // Checking if the fetched data has the expected structure
+        if (!stocksData.results || !Array.isArray(stocksData.results)) {
+            return res.status(500).json({ error: 'Unexpected response from the API' });
+        }
+
         // looping through all the fetched stocks and storing promises to fetch stock details in the array
         // [ Fetch details for each stock in parallel ]
         for (const stock of stocksData.results) {
@@ -57,6 +62,8 @@ const getStocksController = async (req, res) => {
         // waiting for all promises to resolve
         // stockDetails is a promise returned by the promise.all function after resolving all promises
         const stockDetails = await Promise.all(stockDetailPromises)
+
+
 
         // combining stock with details
         const stockWithDetails = stocksData.results.map((stock, index) => ({
