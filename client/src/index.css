@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Jost", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.782);
+  padding: 0;
+  margin: 0;
+  
+}

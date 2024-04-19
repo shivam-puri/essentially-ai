@@ -1,0 +1,32 @@
+.stock-table {
+    border-collapse: collapse;
+    width: 70%;
+    min-width: 900px;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd20; /* Add border below each row */
+  }
+
+  .stock-table th{
+    margin-bottom: 10px;
+  }
+
+  .stock-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.107);
+    cursor: pointer;
+  }
+  
+  .stock-table th {
+    background-color: #f0bc1c;
+    color: black;
+  }
+  
+ 
+  .loading-parent {
+    width: 70%;
+    margin-top: 20px;
+  }

@@ -1,0 +1,72 @@
+body{
+  background-color: #28242c;
+}
+
+.table-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.parent-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: end;
+  align-items: center;
+  background-color: #1d1a20;
+  width: 100%;
+  height: 60px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.098);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.409);
+}
+
+.input-container input {
+  background-color: transparent;
+  padding: 5px;
+  width: 50px;
+  border: none;
+  /* border-right: 1px solid rgba(255, 255, 255, 0.174); */
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.057);
+  border-radius: 5px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-container button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 0px 5px;;
+}
+
+.wrapper{
+  background-color: rgba(0, 0, 0, 0.157);
+  padding: 4px;
+  border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
